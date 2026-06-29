@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(142, 185, 210);
+}
+
+header {
+    padding: 10px;
+    background-color: rgb(94, 149, 181);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav {
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+nav ul li{
+    flex-grow: 1;
+    text-align: center;
+
+
+}
+nav ul a {
+    text-decoration: none;
+    color: rgb(238, 136, 99);
+    background-color: rgb(0, 88, 139);
+    display: block;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+nav ul a:hover{
+    color: black;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    
+
+}
+.submenu {
+    display: none;
+}
+
+li:hover .submenu{
+    display: block;
+    position: absolute;
+    width: 25%;
+}
+.tablaarticulos {
+    margin-top:2rem;
+    display:flex;
+    justify-content: center;
+
+}
+.tablaarticulos img {
+        max-width: 200px;
+        width:100%;
+        display: block;
+}
+
+.tablaarticulos td {
+        border: 2px solid black;
+        background: white;
+        padding: 5px;
+}
+
+.tablaarticulos th {
+        padding:5px;
+        border: 2px solid black;
+        background-color: aquamarine;
+}
+
+.tablaarticulos table {
+        border-collapse: collapse;
+}
+
+.tablaarticulos a {
+        padding: 0;
+        text-decoration: none;
+}
+
+.articulos {
+    margin-top:2rem;
+}
+
+.articulos article {
+    border-top: 2px solid rgb(75, 75, 75);
+    background: rgb(178, 178, 178);
+    display: flex;
+}
+
+pre {
+    max-width: 100%;
+    white-space: pre-wrap; /* Permite que las líneas largas se ajusten */
+    word-wrap: break-word; /* Hace que las palabras largas se rompan */
+}
+.articulos img {
+        max-width: 300px;
+        width:100%;
+        display: block;
+}
+
+
+.articulos a {
+        padding: 0;
+        text-decoration: none;
+        color: black;
+}
+
+.articulos ul {
+        width: 100%;
+}
+
+.articulos li {
+        padding: 10px;
+        list-style: none;
+}
+
+.articulos .precio{
+        font-weight: 700;
+        color: rgb(1, 52, 1);
+}
+
+.articulos .articulo {
+        font-weight: 900;
+}
+
+.articulos .descripcion{
+        display: block;
+        margin: 5px 20px;
+        background-color: rgb(200, 200, 200);
+}
+
+.form_articulo {
+    margin: auto;
+    background-color: rgb(12, 106, 188);
+    width: 40%;
+    padding: 20px;
+}
+
+.form_articulo * {
+        margin: 5px;
+        display: block;
+}
+
+.form_articulo textarea {
+        resize: none;
+}
+
+.botonverde, .botonrojo, .botonceleste :hover{
+    cursor: pointer;
+}
+
+.botonverde:active {
+    cursor: pointer;
+    background-color: rgb(32, 95, 21);
+    border: 2px solid white;
+}
+
+.botonceleste:active {
+    cursor: pointer;
+    background-color: rgb(17, 66, 93);;
+    border: 2px solid white;
+}
+
+.botonrojo:active {
+    cursor: pointer;
+    background-color: rgb(101, 24, 24);
+    border: 2px solid white;
+}
+
+
+.botonverde {
+    background-color: rgb(48, 150, 27);
+    color: white;
+    padding: 5px;
+}
+
+.botonrojo {
+    background-color: rgb(199, 45, 45);
+}
+
+.botonceleste {
+    background-color: rgb(37, 158, 222);
+    color:black;
+}
+.nuevoarticulo {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.gris {
+    background-color: grey;
+}
+
+.celeste {
+    background-color: lightblue;
+}
